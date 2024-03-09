@@ -6,12 +6,12 @@ import React from 'react';
 function App(){
 
   return(
-    <div>
+    <>
       <Routes>
           <Route path='/' element={<Main/>} />
           <Route path='/ramdomimg' element={<Randomimg/>} />
       </Routes>
-    </div> 
+    </> 
   )
 }
 

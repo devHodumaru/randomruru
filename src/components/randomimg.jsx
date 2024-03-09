@@ -8,11 +8,11 @@ function Randomimg(){
   useEffect(() => {
     setRandomGame(setTimeout(() => {
       changeBackground();
-    }, 250));
+    }, 280));
   }, [jrrImgNum]);
 
   let changeBackground = () => {
-    setJrrImgNum(Math.floor(Math.random() * 92));
+    setJrrImgNum(Math.floor(Math.random() * 70));
   };
 
   const stopRamdomgame = (e) => {
@@ -22,14 +22,11 @@ function Randomimg(){
 
   return(
     <>
-      <div>
-      <p className="main">과연~~~?</p>
+      <p className="main">과연~~?!</p>
       <img
         onClick={stopRamdomgame} alt={`jrr${jrrImgNum}`} src={`${process.env.PUBLIC_URL}assets/jrr${jrrImgNum}.png`}
         id='img'
-        loading="lazy"
       />
-      </div>
     </>
   )
 }
